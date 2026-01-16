@@ -1,21 +1,17 @@
 import java.util.*;
 class Solution {
     public String solution(String[] participant, String[] completion) {
-        Map<String, Integer> cmap = new HashMap<>();
+        //완주자 넣기 
+        //참여자 - 완주자? 
+        Arrays.sort(participant);
+        Arrays.sort(completion);
         
-        //put
-        for(String str : completion){
-            cmap.put(str, cmap.getOrDefault(str, 0) + 1);
-        }
-        
-        //compare
-        for(String str: participant){  
-            if(cmap.get(str) == null || cmap.get(str) == 0){
-                return str;
-            }else if(cmap.get(str) != null){
-                cmap.put(str, cmap.get(str) - 1);
+        for(int i = 0; i<participant.length - 1; i++){
+            if(!participant[i].equals(completion[i])){
+                return participant[i];
             }
         }
-        return "";
+       
+        return participant[participant.length-1];
     }
 }
