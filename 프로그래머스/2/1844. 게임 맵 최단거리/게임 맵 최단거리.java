@@ -1,47 +1,48 @@
 import java.util.*;
-
 class Solution {
     public int solution(int[][] maps) {
-        int[] dx = {1, -1, 0, 0};
-        int[] dy = {0, 0, 1, -1};
-        boolean[][] visited = new boolean[maps.length][maps[0].length];
-        
+        //bfs로 풀기
+        //큐에 넣고 막혀있으면 방문X
         
         Queue<int[]> q = new LinkedList<>();
+        int[] x = {1, -1, 0, 0};
+        int[] y = {0, 0, 1, -1};
+        
+        boolean[][] visited = new boolean[maps.length][maps[0].length];
+        
+        int cnt = 0;
+        
+        //시작점 넣기
         q.add(new int[]{0, 0});
         visited[0][0] = true;
-        
+
+        //인접 노드 방문 
         while(!q.isEmpty()){
-            //하나 꺼냄
-            int[] e = q.poll();
-            int x = e[0];
-            int y = e[1];
+
+            int[] arr = q.poll();
             
-            //만약 끝이라면 종료
-            if(x == maps.length-1 && y == maps[0].length-1){
-                return maps[x][y];
-            }
-            //방문할 수 있는 곳 탐색
-            for(int i = 0; i<4; i++){
-                int nx = x + dx[i];
-                int ny = y + dy[i];
-                //범위 밖이면 continue;
-                if(nx < 0 || ny < 0 ||
-                   nx >= maps.length ||
-                   ny >= maps[0].length)
+            if(arr[0] == maps.length -1 && arr[1] == maps[0].length -1) 
+                return maps[arr[0]][arr[1]];
+            
+            for(int j = 0; j<x.length; j++){
+                int dx = arr[0] + x[j];
+                int dy = arr[1] + y[j];
+
+                if(dx < 0 || dy < 0 || dx >= maps.length || dy >= maps[0].length){
                     continue;
+                }
                 
-                //막혀있거나 방문한 곳이면 continue;
-                if(maps[nx][ny] == 0 || visited[nx][ny] == true)
-                    continue;
-                
-                //방문
-                visited[nx][ny] = true;
-                //최솟값
-                maps[nx][ny] = maps[x][y] + 1; //기존 값에 +1
-                //큐에 추가
-                q.add(new int[]{nx, ny});
+                if(visited[dx][dy] == true) continue;
+
+                if((maps[dx][dy] == 1) && (visited[dx][dy] == false)){
+                    //방문
+                    visited[dx][dy] = true;
+                    //큐에 넣기
+                    maps[dx][dy] = maps[arr[0]][arr[1]] + 1;
+                    q.add(new int[]{dx, dy});
+                }
             }
+            
         }
         
         return -1;
