@@ -1,19 +1,20 @@
 class Solution {
     public int[] solution(int brown, int yellow) {
-        int[] answer = new int[2];
-        
-        for(int i = 1; i<=yellow; i++){
-            if(yellow % i == 0){
-                int w = i + 2;
-                int h = (yellow / i) + 2;
-                
-                if(w >= h && (w*h) == (brown+yellow)){
-                    answer[0] = w;
-                    answer[1] = h;
+        for(int i = 1; i<=brown+yellow; i++){
+            if(((brown+yellow) % i) == 0){
+                //두 곱을 나눈 나머지가 0 == 약수
+                if(i >= ((brown+yellow) / i)){
+                    int width = i;
+                    int height = (brown+yellow)/i;
+                    
+                    if(((width - 2) * (height - 2)) == yellow){
+                        return new int[]{width, height}; 
+                    }
+                    
                 }
-                
             }
         }
-        return answer;
+        
+        return new int[]{0, 0};
     }
 }
