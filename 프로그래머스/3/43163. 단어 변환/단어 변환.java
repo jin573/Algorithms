@@ -1,53 +1,50 @@
 import java.util.*;
-
 class Solution {
     public int solution(String begin, String target, String[] words) {
-        Queue<int[]> q = new LinkedList<>();
-        boolean[] visited = new boolean[words.length];
+        //target에 향하는 가장 빠른 경로 -> bfs
         
-        q.add(new int[]{-1, 0});
+        Queue<String[]> q = new LinkedList<>();
+        boolean[] visited = new boolean[words.length];
+        q.add(new String[]{begin, 0 + ""});
         
         while(!q.isEmpty()){
-
-            int[] arr = q.poll();
-            int idx = arr[0];
-            int cnt = arr[1];
-            
-            String str;
-            if(idx == -1){
-                str = begin;
-            }else{
-                str = words[idx];
-            }
-            
-            if(str.equals(target)){
-                return cnt;
-            }
-            
-            //반복문을 돌면서 변환 가능한지 탐색
+            //이번 단어를 꺼냄
+            String[] arr = q.poll();
+            String str = arr[0];
+            int answer = Integer.parseInt(arr[1]);
+            //방문한 적 없음
+            //본인 아님
+            //배열을 돌면서 규칙에 해당하면 q에 넣음
+            //backtracking 필요? ㅇㅇ
             for(int i = 0; i<words.length; i++){
                 if(!visited[i]){
-                    //한 단어만 다른지 확인
+                    char[] i_arr = words[i].toCharArray();
                     char[] s_arr = str.toCharArray();
-                    char[] w_arr = words[i].toCharArray();
-                    int check = 0;
-                    for(int j = 0; j<s_arr.length; j++){
-                        if(s_arr[j] != w_arr[j]){
-                            check++;
+                    int cnt = 0;
+                    
+                    for(int k = 0; k<i_arr.length; k++){
+                        if(i_arr[k] != s_arr[k]){
+                            cnt++;
                         }
                     }
-
-                    //한 단어만 다른 경우
-                    if(check == 1){
+                    
+                    if(cnt == 1){
+                        //한 글자만 다르면
+                        //q에 넣고 visited 하기
+                        if(words[i].equals(target)){
+                            answer++;
+                            return answer;
+                        }
+                        answer++;
+                        q.add(new String[]{words[i], answer + ""});
                         visited[i] = true;
-                        q.add(new int[]{i, cnt + 1});
+                        //answer++;
                     }
+                    
                 }
-                
             }
+            
         }
-        
         return 0;
     }
-    
 }
