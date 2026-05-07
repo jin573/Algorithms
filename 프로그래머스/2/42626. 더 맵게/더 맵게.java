@@ -1,34 +1,42 @@
 import java.util.*;
 class Solution {
-    int count = 0;
     public int solution(int[] scoville, int K) {
-        //어떤 자료구조를 사용하는게 좋을까? 
-        //1. arraylist
-        //2. queue?
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        //스코빌 지수 계산이 반복된다.
+        //배열 정렬? 우선큐?
+        //백트래킹? 아님
+        //배열 시 정렬 크기 너무 큼 우선 큐
         
+        //스코빌 지수가 가장 낮은 원소 두 개 꺼냄
+        //K랑 비교
+        //연산
+        //카운트
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        int count = 0;
         
         for(int i = 0; i<scoville.length; i++){
             pq.add(scoville[i]);
         }
         
-        //조건에 맞는지 확인
-            //조건에 안맞으면 다시 계산
-            //조건에 맞으면 횟수 return 
-       
-        while(pq.peek() < K){
+        while(!pq.isEmpty()){
             
-            if(pq.size() < 2) return -1;
+            if(pq.size() == 1){
+                int cnt = pq.poll();
+                if(cnt < K){ return -1;}
+                else return count;
+            }
             
-            int a = pq.poll();
-            int b = pq.poll();
+            int idx1 = pq.poll();
+            int idx2 = pq.poll();
             
-            pq.add(a + (b*2));
-            count++;
-            
+            if(idx1 < K || idx2 < K){
+                int num = idx1 + (idx2 * 2);
+                pq.add(num);
+                count++;
+            }else{
+                continue;
+            }
         }
-       
+        
         return count;
     }
-
 }
