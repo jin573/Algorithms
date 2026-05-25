@@ -49,18 +49,17 @@ class Solution {
     //갈 수 있는 범위를 벗어날 때 count를 증가해야 함
     //갈 수 있는 범위는 i + nums[i]
 
-        int idx = 0;
         int currentEnd = 0; 
-        int farstest = 0; 
+        int farthest = 0; 
         int count = 0;
 
         for(int i = 0; i<nums.length-1; i++){
             
             //만약 갈 수 있는 가장 먼 값에 도착한다면
             //해당 위치에서 업데이트 되어야 함
-            farstest = Math.max(farstest, i + nums[i]);
+            farthest = Math.max(farthest, i + nums[i]);
             if(i == currentEnd){
-                currentEnd = farstest;
+                currentEnd = farthest;
                 count++;
             }
 
