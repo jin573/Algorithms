@@ -5,6 +5,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/jin573/Algorithms/tree/master/0001-two-sum) |
 | [0045-jump-game-ii](https://github.com/jin573/Algorithms/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/jin573/Algorithms/tree/master/0055-jump-game) |
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
@@ -40,4 +41,8 @@
 | [0055-jump-game](https://github.com/jin573/Algorithms/tree/master/0055-jump-game) |
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/jin573/Algorithms/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
