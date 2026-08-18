@@ -14,6 +14,7 @@
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jin573/Algorithms/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
+| [0739-daily-temperatures](https://github.com/jin573/Algorithms/tree/master/0739-daily-temperatures) |
 | [0875-koko-eating-bananas](https://github.com/jin573/Algorithms/tree/master/0875-koko-eating-bananas) |
 | [2517-maximum-tastiness-of-candy-basket](https://github.com/jin573/Algorithms/tree/master/2517-maximum-tastiness-of-candy-basket) |
 ## Binary Search
@@ -73,8 +74,13 @@
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/jin573/Algorithms/tree/master/0020-valid-parentheses) |
+| [0739-daily-temperatures](https://github.com/jin573/Algorithms/tree/master/0739-daily-temperatures) |
 ## Bracket Sequences
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/jin573/Algorithms/tree/master/0020-valid-parentheses) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/jin573/Algorithms/tree/master/0739-daily-temperatures) |
 <!---LeetCode Topics End-->
