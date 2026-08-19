@@ -45,7 +45,7 @@ class Solution {
         답이 정해지지 않은 애들을 stack에 넣고
         답이 정해질 경우 그 stack를 하나씩 꺼내서 빼자
         */
-
+/*
         Stack<Integer> st = new Stack<>();
         int[] arr = new int[temperatures.length];
 
@@ -81,6 +81,36 @@ class Solution {
             
         }
         
+        return arr;*/
+
+
+
+        Stack<Integer> st = new Stack<>();
+        int[] arr = new int[temperatures.length];
+
+        for(int i = 0; i<temperatures.length; i++){
+            //이번 온도
+                //스택에 있으면 -> 비교
+                //스택에 없으면 -> 일단 넣기
+
+            int now = temperatures[i];
+
+            while(!st.isEmpty()){
+                //이전 상태 꺼내기
+                int prev = st.pop();
+
+                //이전 상태가 지금보다 작으면
+                if(temperatures[prev] < now){
+                    arr[prev] = i - prev;
+                }else{
+                    st.push(prev);
+                    break;
+                }
+            }
+
+            st.push(i);
+        }
+
         return arr;
     }
 }
