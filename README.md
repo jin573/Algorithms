@@ -11,6 +11,7 @@
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
 | [0055-jump-game](https://github.com/jin573/Algorithms/tree/master/0055-jump-game) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jin573/Algorithms/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jin573/Algorithms/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
@@ -36,6 +37,7 @@
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
+| [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jin573/Algorithms/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
@@ -54,6 +56,7 @@
 | [0001-two-sum](https://github.com/jin573/Algorithms/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jin573/Algorithms/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
+| [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
 ## Two Pointers
 |  |
 | ------- |
