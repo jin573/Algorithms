@@ -38,6 +38,7 @@
 | ------- |
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/jin573/Algorithms/tree/master/0242-valid-anagram) |
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jin573/Algorithms/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
@@ -57,6 +58,7 @@
 | [0003-longest-substring-without-repeating-characters](https://github.com/jin573/Algorithms/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/jin573/Algorithms/tree/master/0242-valid-anagram) |
 ## Two Pointers
 |  |
 | ------- |
@@ -69,6 +71,7 @@
 | [0020-valid-parentheses](https://github.com/jin573/Algorithms/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/jin573/Algorithms/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/jin573/Algorithms/tree/master/0242-valid-anagram) |
 ## Sliding Window
 |  |
 | ------- |
