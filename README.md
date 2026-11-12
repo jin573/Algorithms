@@ -12,6 +12,7 @@
 | [0055-jump-game](https://github.com/jin573/Algorithms/tree/master/0055-jump-game) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jin573/Algorithms/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
+| [0349-intersection-of-two-arrays](https://github.com/jin573/Algorithms/tree/master/0349-intersection-of-two-arrays) |
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jin573/Algorithms/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
@@ -21,6 +22,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0349-intersection-of-two-arrays](https://github.com/jin573/Algorithms/tree/master/0349-intersection-of-two-arrays) |
 | [0875-koko-eating-bananas](https://github.com/jin573/Algorithms/tree/master/0875-koko-eating-bananas) |
 | [2517-maximum-tastiness-of-candy-basket](https://github.com/jin573/Algorithms/tree/master/2517-maximum-tastiness-of-candy-basket) |
 ## Greedy
@@ -39,6 +41,7 @@
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jin573/Algorithms/tree/master/0242-valid-anagram) |
+| [0349-intersection-of-two-arrays](https://github.com/jin573/Algorithms/tree/master/0349-intersection-of-two-arrays) |
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jin573/Algorithms/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
@@ -59,11 +62,13 @@
 | [0049-group-anagrams](https://github.com/jin573/Algorithms/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jin573/Algorithms/tree/master/0242-valid-anagram) |
+| [0349-intersection-of-two-arrays](https://github.com/jin573/Algorithms/tree/master/0349-intersection-of-two-arrays) |
 ## Two Pointers
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/jin573/Algorithms/tree/master/0011-container-with-most-water) |
 | [0125-valid-palindrome](https://github.com/jin573/Algorithms/tree/master/0125-valid-palindrome) |
+| [0349-intersection-of-two-arrays](https://github.com/jin573/Algorithms/tree/master/0349-intersection-of-two-arrays) |
 ## String
 |  |
 | ------- |
