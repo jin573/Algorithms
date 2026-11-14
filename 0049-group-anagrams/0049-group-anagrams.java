@@ -1,32 +1,28 @@
 import java.util.*;
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
+        //횟수가 중요한 문제인가? ㅇㅇ
+        //1. "eat" -> e가 1번 a가 1번 t가 1번 -> 기존 자료구조에 해당 정보 없음 -> 담음
+        //2. "tea" -> t가 1번 e가 1번 a가 1번 -> 기존 다료구조에 해당 정보 있음 -> 같은 list에 add
 
-        //단어 하나를 꺼낸다
-        //해당 단어를 char 로 정렬한다.-> 너무 오래 걸릴 거 같은데 정렬 말고 다른방법 없나? 
-        //그 단어가 있으면 리스트에 추가한다
 
-        HashMap<String, List<String>> map = new HashMap<>();
-        
+        Map<String, List<String>> map = new HashMap<>();
+
         for(int i = 0; i<strs.length; i++){
-            
-            char[] arr = strs[i].toCharArray();
-            Arrays.sort(arr);
-            String sorted = new String(arr);
+            char[] carr = strs[i].toCharArray(); //string 을 정렬
+            Arrays.sort(carr);
+            String str = new String(carr);
 
-            //해당 단어가 key로 존재하면? value 뒤에 넣기
-            //존재하지 않는다면? 새로 만들기
-            if(map.containsKey(sorted)){
-                List<String> list = map.get(sorted);
-                list.add(strs[i]);
-
-            }else{
-                List<String> new_list = new ArrayList<>();
-                new_list.add(strs[i]);
-                map.put(sorted, new_list);
+            //해당 str 로 되는 key가 없는 경우 새 map을 만듦
+            if(!map.containsKey(str)){
+                map.put(str, new ArrayList<>());
             }
+
+            //해당 map을 가져와 value 넣기
+            List<String> list = map.get(str);
+            list.add(strs[i]);
         }
 
-        return new ArrayList<>(map.values());      
+        return new ArrayList<>(map.values());
     }
 }
