@@ -16,6 +16,7 @@
 | [0435-non-overlapping-intervals](https://github.com/jin573/Algorithms/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jin573/Algorithms/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jin573/Algorithms/tree/master/0646-maximum-length-of-pair-chain) |
+| [0706-design-hashmap](https://github.com/jin573/Algorithms/tree/master/0706-design-hashmap) |
 | [0739-daily-temperatures](https://github.com/jin573/Algorithms/tree/master/0739-daily-temperatures) |
 | [0875-koko-eating-bananas](https://github.com/jin573/Algorithms/tree/master/0875-koko-eating-bananas) |
 | [2517-maximum-tastiness-of-candy-basket](https://github.com/jin573/Algorithms/tree/master/2517-maximum-tastiness-of-candy-basket) |
@@ -63,6 +64,7 @@
 | [0217-contains-duplicate](https://github.com/jin573/Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jin573/Algorithms/tree/master/0242-valid-anagram) |
 | [0349-intersection-of-two-arrays](https://github.com/jin573/Algorithms/tree/master/0349-intersection-of-two-arrays) |
+| [0706-design-hashmap](https://github.com/jin573/Algorithms/tree/master/0706-design-hashmap) |
 ## Two Pointers
 |  |
 | ------- |
@@ -94,4 +96,16 @@
 |  |
 | ------- |
 | [0739-daily-temperatures](https://github.com/jin573/Algorithms/tree/master/0739-daily-temperatures) |
+## Linked List
+|  |
+| ------- |
+| [0706-design-hashmap](https://github.com/jin573/Algorithms/tree/master/0706-design-hashmap) |
+## Design
+|  |
+| ------- |
+| [0706-design-hashmap](https://github.com/jin573/Algorithms/tree/master/0706-design-hashmap) |
+## Hash Function
+|  |
+| ------- |
+| [0706-design-hashmap](https://github.com/jin573/Algorithms/tree/master/0706-design-hashmap) |
 <!---LeetCode Topics End-->
