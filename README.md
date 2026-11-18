@@ -99,6 +99,7 @@
 ## Linked List
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/jin573/Algorithms/tree/master/0206-reverse-linked-list) |
 | [0706-design-hashmap](https://github.com/jin573/Algorithms/tree/master/0706-design-hashmap) |
 ## Design
 |  |
@@ -108,4 +109,8 @@
 |  |
 | ------- |
 | [0706-design-hashmap](https://github.com/jin573/Algorithms/tree/master/0706-design-hashmap) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/jin573/Algorithms/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
