@@ -1,59 +1,46 @@
 import java.util.*;
-class MyHashMap {
-    //hash 값이 10이라고 가정
-    //새로 들어온 값이 있으면 충돌 없이 update 해야됨
 
-    List<List<int[]>> list;
+class MyHashMap {
+
+    List<List<int[]>> list = new ArrayList<>();
 
     public MyHashMap() {
-        this.list = new ArrayList<>();
-
+        
+        //리스트 초기화
         for(int i = 0; i<10; i++){
-            list.add(new ArrayList<>());
-        }
+            List<int[]> n_list = new ArrayList<>();
+            list.add(n_list);
+        }        
     }
     
     public void put(int key, int value) {
-        //hash 함수를 써서 어느 위치에 넣을지 정하기
-        int num = key % 10;
+        //key의 해시 값 구하기
+        int hash = key % 10;
+        //해당 line에서 key가 있으면 update, 없으면 input
 
-        // 해당 위치의 list 가져오기
-        List<int[]> arr = list.get(num);
+        List<int[]> h_list = list.get(hash);
+        for(int i = 0; i<h_list.size(); i++){
+            int[] arr = h_list.get(i);
 
-        // 해당 위치의 list가 비어져있으면 넣기, 아니면 key를 비교하고 update
-        if(arr.isEmpty()){
-            int[] pair = new int[]{key, value};
-            arr.add(pair);
-        }else{
-            //해당 key가 있는지 확인
-            for(int i = 0; i<arr.size(); i++){
-                int[] pair = arr.get(i);
-
-                if(pair[0] == key){
-                    pair[1] = value;
-                    return;
-                }
+            if(arr[0] == key){
+                arr[1] = value;
+                return;
             }
-
-            int[] pair = new int[]{key, value};
-            arr.add(pair);
         }
-        
-    }   
+
+        h_list.add(new int[]{key, value});
+    }
     
     public int get(int key) {
-        //해당 key의 hash 값 구하기
-        int num = key % 10;
+        int hash = key % 10;
 
-        //해당 key 의 list 가져오기
-        List<int[]> arr = list.get(num);
-        //해당 위치의 arr이 빈값이면 -1 반환하기
-        for(int i = 0; i<arr.size(); i++){
+        //hash 행을 가져오기
+        List<int[]> h_list = list.get(hash);
+        for(int i = 0; i<h_list.size(); i++){
+            int[] arr = h_list.get(i);
 
-            int[] pair = arr.get(i);
-
-            if(pair[0] == key){
-                return pair[1];
+            if(arr[0] == key){
+                return arr[1];
             }
         }
 
@@ -61,16 +48,14 @@ class MyHashMap {
     }
     
     public void remove(int key) {
-        //해당 key의 hash 값 구하기
-        int num = key % 10;
+        int hash = key % 10;
 
-        List<int[]> arr = list.get(num);
-    
-        for(int i = 0; i<arr.size(); i++){
-            int[] pair = arr.get(i);
+        List<int[]> h_list = list.get(hash);
+        for(int i = 0; i<h_list.size(); i++){
+            int[] arr = h_list.get(i);
 
-            if(pair[0] == key){
-                arr.remove(i);
+            if(arr[0] == key){
+                h_list.remove(i);
                 return;
             }
         }
